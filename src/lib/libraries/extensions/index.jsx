@@ -46,7 +46,65 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+// 自作
+import graphIconURL from './graph/graph_icon.png';
+import graphInsetIconURL from './graph/graph_insetIcon.png';
+
+import statisticsIconURL from './statistics/statistics_icon.png';
+import statisticsInsetIconURL from './statistics/statistics_insetIcon.png';
+
+import wetherIconURL from './wether/wether_icon.png';
+import wetherInsetIconURL from './wether/wether_insetIcon.png';
+
+import softballIconURL from './softball/softballIcon.png';
+import softballInsetIconURL from './softball/softball_small.png';
+
+import basicIconURL from "./basic/basic_icon.png";
+
 export default [
+    // 自作
+    {
+        name: '便利な基本ブロック',
+        extensionId: 'basic',
+        description: '便利な基本ブロックを追加する',
+        iconURL: basicIconURL,
+        insetIconURL: penInsetIconURL,
+        featured: true
+    },
+    {
+        name: 'オリジナルのグラフを作る',
+        extensionId: 'Graph',
+        description: 'オリジナルのグラフを作るためのブロックを追加',
+        iconURL: graphIconURL,
+        insetIconURL: graphInsetIconURL,
+        featured: true
+    },
+    {
+        name: '統計量を求める',
+        extensionId: 'statistics',
+        iconURL: statisticsIconURL,
+        insetIconURL: statisticsInsetIconURL,
+        description: '最大値や平均値を計算するブロックを追加',
+        featured: true   
+    },
+    {
+        name: '2010年から2020年までの平均気温・降水量・日照量のデータ',
+        extensionId: 'wether',
+        iconURL: wetherIconURL,
+        insetIconURL: wetherInsetIconURL,
+        description: 'さっぽろ(北海道)・せん台(宮城県)・東京・す訪(長野県)・名古屋(愛知県)・大阪・福岡・なは(沖縄県)のデータ',
+        featured: true
+    },
+    {
+        name: '6年ソフトボール投げの結果',
+        extensionId: 'classdata',
+        iconURL: softballIconURL,
+        insetIconURL: softballInsetIconURL,
+        description: '6学年のソフトボール投げの記録',
+        featured: true
+    },
+
+    // 既存
     {
         name: (
             <FormattedMessage
